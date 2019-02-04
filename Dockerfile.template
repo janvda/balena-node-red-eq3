@@ -1,2 +1,2 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
+FROM balenalib/%%BALENA_MACHINE_NAME%%:latest-stretch
 
