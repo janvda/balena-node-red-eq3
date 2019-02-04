@@ -1,2 +1,4 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-stretch
 
+CMD ["sleep", "3600" ]
+
