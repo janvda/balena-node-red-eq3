@@ -1,6 +1,6 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-stretch
 
-RUN install_packages expect
+RUN install_packages expect gattool hcitool
 
 CMD ["sleep", "3600" ]
 
