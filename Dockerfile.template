@@ -1,6 +1,7 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-stretch
 
-RUN install_packages expect gattool hcitool
+# package bluez contains gattool and hcitool
+RUN install_packages expect bluez
 
 CMD ["sleep", "3600" ]
 
