@@ -1,4 +1,6 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-stretch
 
+RUN install_packages expect
+
 CMD ["sleep", "3600" ]
 
