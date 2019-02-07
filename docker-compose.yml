@@ -1,18 +1,17 @@
 version: '2.1'
 networks: {}
 volumes:
-  resin-data: {}
+  node-red-eq3-data: {}
 services:
-  main:
-    build:
-      context: .
+  node-red-eq3:
+    build: node-red-eq3
     privileged: true
     restart: always
     network_mode: host
     ports:
       - "80:1880"
     volumes:
-      - 'resin-data:/data'
+      - 'node-red-eq3-data:/data'
     labels:
       io.balena.features.kernel-modules: '1'
       io.balena.features.firmware: '1'
