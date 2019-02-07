@@ -9,7 +9,7 @@ services:
     restart: always
     network_mode: host
     ports:
-       - "80:1880"
+       - "1880:1880"
     volumes:
       - 'node-red-eq3-data:/data'
     labels:
@@ -20,3 +20,11 @@ services:
       io.balena.features.balena-api: '1'
       io.balena.update.strategy: download-then-kill
       io.balena.update.handover-timeout: ''
+  nginx:
+    build : nginx
+    depends_on:
+      - node-red-eq3
+    ports:
+       - "80:80"
+       - "443:443"
+    restart: always
