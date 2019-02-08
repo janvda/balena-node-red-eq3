@@ -3,7 +3,7 @@ networks: {}
 volumes:
   node-red-eq3-data: {}
 services:
-  node-red-eq3:
+  nodered:
     build: node-red-eq3
     privileged: true
     restart: always
@@ -23,8 +23,9 @@ services:
   nginx:
     build : nginx
     depends_on:
-      - node-red-eq3
+      - nodered
     ports:
        - "80:80"
+
        - "443:443"
     restart: always
