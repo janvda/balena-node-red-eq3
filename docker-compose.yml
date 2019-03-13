@@ -1,5 +1,5 @@
 version: '2.1'
-networks: {}
+#networks: {}
 volumes:
   node-red-eq3-data: {}
 services:
