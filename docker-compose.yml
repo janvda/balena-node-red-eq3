@@ -1,4 +1,4 @@
-version: '2.1'
+version: '2'
 #networks: {}
 volumes:
   node-red-eq3-data: {}
@@ -26,6 +26,5 @@ services:
       - nodered
     ports:
        - "80:80"
-
        - "443:443"
     restart: always
