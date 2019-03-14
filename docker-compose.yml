@@ -5,11 +5,12 @@ volumes:
 services:
   simple-server-python:
     build : simple-server-python
+    privileged: true
   nodered:
     build: node-red-eq3
     privileged: true
     restart: always
-    network_mode: host
+    #network_mode: host
     ports:
        - "1880:1880"
     volumes:
