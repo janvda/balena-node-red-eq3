@@ -6,6 +6,7 @@ services:
   simple-server-python:
     build : simple-server-python
     privileged: true
+    network_mode: host
   nodered:
     build: node-red-eq3
     privileged: true
