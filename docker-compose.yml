@@ -6,14 +6,14 @@ services:
   simple-server-python:
     build : simple-server-python
     privileged: true
-    network_mode: host
-    labels:
-        io.balena.features.dbus: '1'  
+ #   network_mode: host
+ #   labels:
+ #      io.balena.features.dbus: '1'  
   nodered:
     build: node-red-eq3
     privileged: true
     restart: always
-    #network_mode: host
+    network_mode: host
     ports:
        - "1880:1880"
     volumes:
@@ -21,7 +21,7 @@ services:
     labels:
       io.balena.features.kernel-modules: '1'
       io.balena.features.firmware: '1'
-      io.balena.features.dbus: '1'
+ #     io.balena.features.dbus: '1'
  #     io.balena.features.supervisor-api: '1'
       io.balena.features.balena-api: '1'
       io.balena.update.strategy: download-then-kill
