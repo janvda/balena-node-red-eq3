@@ -16,7 +16,7 @@ USER node-red
 RUN npm install node-red-contrib-resinio
 RUN npm install node-red-dashboard
 RUN npm install node-red-contrib-credentials
-RUN npm install node-red-contrib-eq3-bluetooth
+RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
 
 
 COPY ./settings.js /data/settings.js
