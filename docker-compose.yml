@@ -15,7 +15,7 @@ services:
     restart: always
     network_mode: host
     ports:
-       - "1880:1880"
+       - "80:1880"
     volumes:
       - 'node-red-eq3-data:/data'
     labels:
@@ -36,6 +36,6 @@ services:
       - nodered
       - simple-server-python
     ports:
-       - "80:80"
+       - "81:80"
        - "443:443"
     restart: always
