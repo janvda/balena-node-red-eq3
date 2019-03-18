@@ -26,6 +26,10 @@ services:
       io.balena.features.balena-api: '1'
       io.balena.update.strategy: download-then-kill
       io.balena.update.handover-timeout: ''
+  mqtt:
+    image: panuwitp/mosquitto-arm
+    ports:
+      - "1883:1883"
   nginx:
     build : nginx
     depends_on:
