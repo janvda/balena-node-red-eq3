@@ -3,12 +3,6 @@ version: '2'
 volumes:
   node-red-eq3-data: {}
 services:
-  simple-server-python:
-    build : simple-server-python
-    privileged: true
- #   network_mode: host
- #   labels:
- #      io.balena.features.dbus: '1'  
   nodered:
     build: node-red-eq3
     privileged: true
@@ -34,7 +28,6 @@ services:
     build : nginx
     depends_on:
       - nodered
-      - simple-server-python
     ports:
        - "80:80"
        - "443:443"
