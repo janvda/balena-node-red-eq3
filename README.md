@@ -12,7 +12,10 @@ Moreover a simple UI is included that shows the current status of the thermostat
 ![simple UI to get current status](./eq3_nodered_dashboard_01.jpg)
 
 ## 2. What
-TODO
+This composite docker application exists of the following 3 containers:
+1. [Node-RED container](#4-node-red-container) - has all the control logic + simple UI
+2. [Nginx Container](#5-nginx-container) - reverse proxy for accessing Node-RED via public device URL.
+3. [MQTT Container](#6-mqtt-container) - MQTT message server
 ## 3. How to install this application on a Raspberry Pi
 It is very easy to install this application using the [BalenaCloud](https://www.balena.io/) services through following steps:
 1. [Balena Setup](https://www.balena.io/): you need a BalenaCloud account and your Raspberry Pi must be running the BalenaOs.  You also need to create an application in your balena dashboard and associate your Rasperry Pi to it (see balena documentation).
