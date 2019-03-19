@@ -31,9 +31,10 @@ The Node-RED editor is protected by a user name and a **hashed** password that m
  
 ## 5. Nginx Container
 ### 5.1 Set the IP address in the nginx.conf file (Mandatory !)
-In order to assure that the Balena Public Device URL can be used to access your Node-RED editor and the Node-RED UI (for this you must add `/ui` to the public device url) you must assure that the IP Address of your raspberry pi is specified in line 27 of the `nginx\nginx.conf` in your cloned github repository.
+In order to assure that the Balena Public Device URL can be used to access your Node-RED editor and the Node-RED UI (for this you must add `/ui` to the public device url) you must assure that the `IP Address of your raspberry pi` is specified in line 27 of the `nginx\nginx.conf` in your cloned github repository.
 
-The IP address of your raspberry pi can be found in the balena dashboard by navigating to the raspberry pi device.
+The `IP address of your raspberry pi` can be found in the balena dashboard by navigating to the raspberry pi device.
+If the pi is connected to the intranet both through wifi and ethernet then you will see 2 IP addresses in the dashboard, in that case take the IP address that is most likely always available.
 
 ## 6. Issues or Feature Requests
 Any issues or feature requests can be found or reported here: https://github.com/janvda/balena-node-red-eq3/issues
