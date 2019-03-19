@@ -25,7 +25,8 @@ It is very easy to install this application using the [BalenaCloud](https://www.
 5. Move into this repository by command `cd balena-node-red-eq3`
 6. Add balena git remote endpoint by running a command like `git remote add balena gh_janvda@git.balena-cloud.com:gh_janvda/pi3three.git` (the actual command for your setup can also be found in your balena dashboard under the application you have just created in the upper right corner)
 7. push the repository to balena by the command `git push balena master` (maybe you need to add the option `--force` the first time you are deploying) this will make that your application is build on the balena build servers and after this build Balena will automatically deploy the built docker application on your raspberry pi.
-8. Then you need to 
+8. Then you need to [Set BLE MAC address of your eq3 thermostat in your Node-RED flow](#43-set-ble-mac-address-of-your-eq3-thermostat-in-your-node-red-flow)
+9. (Re)deploy your Node-RED flows
 
 ## 4. Node-RED Container
 ### 4.1 Objective
