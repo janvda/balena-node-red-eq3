@@ -19,9 +19,10 @@ It is very easy to install this application using the [BalenaCloud](https://www.
 2. Within Balena dashboard you must set the user name and hashed password for the Node-RED editor as is specified in section [4.1 Setting Node-RED user name and password](#41-setting-node-red-user-name-and-password-mandatory-)
 3. clone this github repository (this can be done on any device where git is installed) through the following command `git clone https://github.com/janvda/balena-node-red-eq3.git` (instead of directly cloning the repository it might be better to fork the github repository and then clone this forked repository).
 4.  
-3. Move into this repository by command `cd balena-node-red-eq3`
-4. Add balena git remote endpoint by running a command like `git remote add balena gh_janvda@git.balena-cloud.com:gh_janvda/pi3three.git` (the actual command for your setup can also be found in your balena dashboard under the application you have just created in the upper right corner)
-5. push the repository to balena by the command `git push balena master` (maybe you need to add the option `--force` the first time you are deploying) and this will be build your application.
+5. Move into this repository by command `cd balena-node-red-eq3`
+6. Add balena git remote endpoint by running a command like `git remote add balena gh_janvda@git.balena-cloud.com:gh_janvda/pi3three.git` (the actual command for your setup can also be found in your balena dashboard under the application you have just created in the upper right corner)
+7. push the repository to balena by the command `git push balena master` (maybe you need to add the option `--force` the first time you are deploying) this will make that your application is build on the balena build servers and after this build Balena will automatically deploy the build docker application on your raspberry pi.
+8.
 
 ## 4. Node-RED Container
 ### 4.1 Setting Node-RED user name and password (Mandatory !)
@@ -29,6 +30,7 @@ The Node-RED editor is protected by a user name and a **hashed** password that m
  *Service Variables (S(X))*
  
 ## 5. Nginx Container
-
+### 5.1 Set the IP address in the nginx.conf file (Mandatory !)
+In order to assure that the Balena Public Device URL can be used to access your Node-RED editor and the Node-RED UI (for this you must add `/ui` to the public device url) you must assure that the IP Address of your raspberry pi is specified in the nginx.conf
 ## 6. Issues or Feature Requests
 Any issues or feature requests can be found or reported here: https://github.com/janvda/balena-node-red-eq3/issues
