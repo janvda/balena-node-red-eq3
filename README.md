@@ -16,7 +16,7 @@ Moreover a simple UI is included that shows the current status of the thermostat
 ## 3. How to install this application on a Raspberry Pi
 It is very easy to install this application using the [BalenaCloud](https://www.balena.io/) services through following steps:
 1. [Balena Setup](https://www.balena.io/): you need a BalenaCloud account and your Raspberry Pi must be running the BalenaOs.  You also need to create an application in your balena dashboard and associate your Rasperry Pi to it (see balena documentation).
-2. Within Balena dashboard you must set the user name and hashed password for the Node-RED editor as is specified in section (#41-setting-node-red-user-name-and-password-mandatory-)
+2. Within Balena dashboard you must set the user name and hashed password for the Node-RED editor as is specified in section [4.1 Setting Node-RED user name and password](#41-setting-node-red-user-name-and-password-mandatory-)
 3. clone this github repository (this can be done on any device where git is installed) through the following command `git clone https://github.com/janvda/balena-node-red-eq3.git` (instead of directly cloning the repository it might be better to fork the github repository and then clone this forked repository).
 4.  
 3. Move into this repository by command `cd balena-node-red-eq3`
