@@ -30,5 +30,5 @@ The Node-RED editor is protected by a user name and a **hashed** password that m
  
 ## 5. Nginx Container
 
-## Issues or Feature Requests
+## 6. Issues or Feature Requests
 Any issues or feature requests can be found or reported here: https://github.com/janvda/balena-node-red-eq3/issues
