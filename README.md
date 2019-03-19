@@ -23,9 +23,12 @@ It is very easy to install this application using the [BalenaCloud](https://www.
 4. Add balena git remote endpoint by running a command like `git remote add balena gh_janvda@git.balena-cloud.com:gh_janvda/pi3three.git` (the actual command for your setup can also be found in your balena dashboard under the application you have just created in the upper right corner)
 5. push the repository to balena by the command `git push balena master` (maybe you need to add the option `--force` the first time you are deploying) and this will be build your application.
 
-### 3.1 Setting Node-RED user name and password (Mandatory !)
+## 4. Node-RED Container
+### 4.1 Setting Node-RED user name and password (Mandatory !)
 The Node-RED editor is protected by a user name and a **hashed** password that must be set through the environment variables `USERNAME` and  `PASSWORD`. The [Node-RED security page](https://nodered.org/docs/security) describes how a password hash can be generated.  You can set these environment variables using your [Balena dashboard](https://dashboard.balena-cloud.com) under
  *Service Variables (S(X))*
+ 
+## 5. Nginx Container
 
 ## Issues or Feature Requests
 Any issues or feature requests can be found or reported here: https://github.com/janvda/balena-node-red-eq3/issues
