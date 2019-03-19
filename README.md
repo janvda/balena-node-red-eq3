@@ -9,6 +9,7 @@ Via the intranet: MQTT messages can be sent to the Pi to open/close the eQ3 ther
 ![eqiva eQ-3 bluetooth](./eqiva_eQ-3.jpg)
 
 Moreover a simple UI is included that shows the current status of the thermostat (see screenshot below).
+![simple UI to get current status](./eq3_nodered_dashboard_01.jpg)
 
 ## Issues or Feature Requests
 Any issues or feature requests can be found or reported here: https://github.com/janvda/balena-node-red-eq3/issues
