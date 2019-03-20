@@ -18,5 +18,6 @@ RUN npm install node-red-dashboard
 RUN npm install node-red-contrib-credentials
 RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
 
-
-COPY ./settings.js /data/settings.js
+# Take care that the following command is only effective the very first time the application is deployed
+# on the device.  Next deployments won't overwrite  these files as /data is mounted volumne.
+COPY settings.js flows.json flows_cred.json package.json /data
