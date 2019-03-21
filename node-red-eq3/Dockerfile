@@ -11,6 +11,9 @@ RUN echo "node-red ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 # see https://github.com/noble/noble#running-without-rootsudo
 RUN sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
 
+# following command makes that we can execute hcitool without sudo (e.g. via execute node)
+RUN sudo setcap cap_net_raw+eip $(eval readlink -f `which hcitool`)
+
 USER node-red
 
 RUN npm install node-red-contrib-resinio
