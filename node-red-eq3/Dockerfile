@@ -21,5 +21,5 @@ RUN npm install node-red-dashboard
 RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
 
 # Take care that the following command is only effective the very first time the application is deployed
-# on the device.  Next deployments won't overwrite  these files as /data is mounted volumne.
+# on the device.  Next deployments won't overwrite  these files as /data is a mounted volume.
 COPY settings.js flows.json flows_cred.json package.json /data/
