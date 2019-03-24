@@ -19,8 +19,8 @@ USER node-red
 RUN npm install node-red-contrib-resinio
 RUN npm install node-red-dashboard
 RUN npm install node-red-contrib-credentials
-RUN npm install node-red-contrib-eq3-bluetooth
-#RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
+#RUN npm install node-red-contrib-eq3-bluetooth
+RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
 
 # Take care that the following command is only effective the very first time the application is deployed
 # on the device.  Next deployments won't overwrite  these files as /data is mounted volumne.
