@@ -18,7 +18,7 @@ USER node-red
 
 RUN npm install node-red-contrib-resinio
 RUN npm install node-red-dashboard
-RUN npm install btsimonh/node-red-contrib-eq3-bluetooth#btsimonh --save
+RUN npm install janvda/node-red-contrib-eq3-bluetooth#v2.3.1 --save
 
 # Take care that the following command is only effective the very first time the application is deployed
 # on the device.  Next deployments won't overwrite  these files as /data is a mounted volume.
