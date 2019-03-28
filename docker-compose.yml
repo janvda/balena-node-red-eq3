@@ -20,8 +20,8 @@ services:
  #     io.balena.update.strategy: download-then-kill
  #    io.balena.update.handover-timeout: ''
   mqtt:
-    image: eclipse-mosquitto
-    #image: panuwitp/mosquitto-arm
+    #image: eclipse-mosquitto
+    image: panuwitp/mosquitto-arm
     ports:
       - "1883:1883"
   nginx:
