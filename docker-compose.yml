@@ -21,7 +21,6 @@ services:
  #    io.balena.update.handover-timeout: ''
   mqtt:
     image: arm32v6/eclipse-mosquitto
-    # image: panuwitp/mosquitto-arm
     ports:
       - "1883:1883"
   nginx:
