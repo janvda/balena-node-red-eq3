@@ -19,9 +19,6 @@ USER node-red
 RUN npm install node-red-contrib-resinio
 RUN npm install node-red-dashboard
 RUN npm install janvda/node-red-contrib-eq3-bluetooth#v2.3.1 --save
-RUN pwd
-
-
 
 
 # Take care that the following command is only effective the very first time the application is deployed
