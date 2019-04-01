@@ -25,7 +25,7 @@ services:
     ports:
       - "1883:1883"
   mqtt2:
-    image: eclipse-mosquitto
+    image: arm32v6/eclipse-mosquitto
     ports:
       - "1884:1883"
   nginx:
