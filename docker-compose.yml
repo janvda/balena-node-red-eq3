@@ -24,6 +24,10 @@ services:
     image: panuwitp/mosquitto-arm
     ports:
       - "1883:1883"
+  mqtt2:
+    image: eclipse-mosquitto
+    ports:
+      - "1884:1883"
   nginx:
     build : nginx
     network_mode: host
