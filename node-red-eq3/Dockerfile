@@ -18,9 +18,6 @@ USER node-red
 
 RUN npm install node-red-contrib-resinio
 RUN npm install node-red-dashboard
-
-# the following command is just a hack to force a rebuild of all the commands after
-RUN pwd
 RUN npm install janvda/node-red-contrib-eq3-bluetooth#v2.3.1 --save
 
 # Take care that the following command is only effective the very first time the application is deployed
