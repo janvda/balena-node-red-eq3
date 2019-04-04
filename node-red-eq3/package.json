@@ -1,6 +1,6 @@
 {
     "name": "node-red-eq3",
-    "description": "node-red flow(s) for eqiva eq-3 to be used in combination with balena-node-red-eq3 repository",
+    "description": "node-red flow(s) for eqiva eQ-3 device to be used in combination with janvda/balena-node-red-eq3 repository",
     "version": "0.0.1",
     "dependencies": {
         "node-red-contrib-eq3-bluetooth": "2.3.0",
